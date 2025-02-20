@@ -153,10 +153,10 @@ const StakingLists = () => {
         const apy = await convertFromHextToInt(userHistoryData.stakingApy)
         const stakingData = amount.map((amt, index) => ({
           amount: amt,
-          startTime: moment(new Date(convertToLocalTime(startTime[index]))).format('YYYY/MM/DD'),
-          endTime: moment(new Date(convertToLocalTime(startTime[index]))).add(period[index], "days").format('YYYY/MM/DD'),
+          startTime: convertToLocalTime(startTime[index]),
+          endTime: convertToLocalTime(startTime[index] + period[index] * 24 * 60 * 60),
           apy: apy[index],
-          status: moment().isAfter(moment(new Date(convertToLocalTime(startTime[index]))).add(period[index], 'days')) ? 'Unlocked' : 'Locked'
+          status: moment().isAfter(moment(new Date(convertToLocalTime(startTime[index] + period[index] * 24 * 60 * 60)))) ? 'Unlocked' : 'Locked'
         }))
         setGlobalHistory(stakingData)
         setStakingData(stakingData)

@@ -214,8 +214,10 @@ export const getHistory = async (
 
 export const convertToLocalTime = (timestamp) => {
     const date = new Date(timestamp * 1000);
-    const localTimeString = date.toLocaleString();
-    return localTimeString;
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1; // Months are 0-11, so add 1
+    const day = date.getDate();
+    return `${month}/${day}/${year}`;
 }
 
 export const withdraw_token = async (
