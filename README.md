@@ -14,10 +14,7 @@ pnpm dev
 bun dev
 ```
 
-<video width="600" autoplay loop muted playsinline>
-  <source src="./readme/Solana_Crypto_Staking_platform.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="./readme/difhigh_project_1.gif">
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
