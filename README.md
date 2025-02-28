@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Solana DipHigh Staking Platform Front-End 
 
 ## Getting Started
 
@@ -14,11 +14,18 @@ pnpm dev
 bun dev
 ```
 
+<video width="600" controls>
+  <source src="./readme/Solana_Crypto_Staking_platform.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
 
 ## Learn More
 
